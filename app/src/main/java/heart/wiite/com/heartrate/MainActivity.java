@@ -43,7 +43,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         sensor2 = sensorManager2
                 .getDefaultSensor(Sensor.TYPE_HEART_RATE);
         sensorManager2.registerListener(this, sensor2,
-                SensorManager.SENSOR_DELAY_NORMAL);
+                SensorManager.SENSOR_DELAY_GAME);
         new CreateFile().generateNoteOnSD(this, "\nheartRate_qs  heart sensor registered");
     }
 
